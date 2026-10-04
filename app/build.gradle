@@ -1,0 +1,25 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.mengjafekad.app'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.mengjafekad.app'
+        minSdk 23
+        targetSdk 36
+        versionCode 18
+        versionName '1.8'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+}
